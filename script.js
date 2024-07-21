@@ -19,3 +19,18 @@ document.addEventListener("keydown", (e) => {
     }
   }
 });
+const fruitsArray = [
+  "./images/apple.png",
+  "./images/orange.png",
+  "./images/strawberry.png",
+  "./images/grapes.png",
+  "./images/blackberry.png",
+  "./images/banana.png",
+  "./images/cherry.png",
+  "./images/blackGrapes.png",
+];
+const randomNumber = parseInt(8 * Math.random());
+console.log(randomNumber);
+document.getElementById(
+  "fruits"
+).innerHTML = `<img src="${fruitsArray[randomNumber]}">`;
